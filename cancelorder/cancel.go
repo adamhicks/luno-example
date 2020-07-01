@@ -13,7 +13,7 @@ func main() {
 	lunoClient := luno.NewClient()
 	lunoClient.SetAuth("api key", "api secret") // <-- Paste your Luno key and secret here
 
-	req := luno.StopOrderRequest{OrderId: "BX97B352A6D789C"}
+	req := luno.StopOrderRequest{OrderId: "BX97B352A6D789C"} // HL
 	res, err := lunoClient.StopOrder(ctx, &req)
 	if err != nil {
 		panic(err)

@@ -46,9 +46,9 @@ A website is how a **human** uses a service, we:
 - Type on a keyboard
 - Click buttons
 
-An API is how a *computer* uses a service, it:
-- Makes an _API Request_
-- Receives an _API Response_
+An API is how a **computer** uses a service, it:
+- Makes an _request_
+- Receives an _response_
 - Runs code to figure out what to do next
 
 ## What can I do on the Luno API?
@@ -100,4 +100,4 @@ Enables programs to trade crypto
 
 API key authorises your program to access your Luno account
 
-Check your programs carefully, Orders can **not** be reversed
+Check your programs carefully, trades can **not** be reversed
