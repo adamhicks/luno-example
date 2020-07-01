@@ -18,6 +18,8 @@ ahicks@luno.com
 - Quick Start
 - Code examples
 
+## What is an API?
+
 ## What humans see
 `https://www.luno.com/trade/markets/XBTGBP`
 
@@ -37,8 +39,7 @@ ahicks@luno.com
 
 `{"order_id": "BX933A74BE8"}`
 
-## What is an API?
-
+##
 A website is how a **human** uses a service, we:
 - See images on a screen
 - Move a cursor
@@ -46,9 +47,9 @@ A website is how a **human** uses a service, we:
 - Click buttons
 
 An API is how a *computer* uses a service, it:
-- Runs some code to figure out what to do
 - Makes an _API Request_
 - Receives an _API Response_
+- Runs code to figure out what to do next
 
 ## What can I do on the Luno API?
 - Get market data
@@ -90,10 +91,10 @@ XRP 114.896144
 ## Placing an Order
 .code -edit placeorder/place.go /^//START/,/^//END/
 
-## Summary
+## Luno API
 
-- Enables programs to trade crypto
+Enables programs to trade crypto
 
-- API key authorises your program to access your Luno account
+API key authorises your program to access your Luno account
 
-- Check your programs carefully, Orders can **not** be reversed
+Check your programs carefully, Orders can **not** be reversed
