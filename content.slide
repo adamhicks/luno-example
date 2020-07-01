@@ -7,7 +7,7 @@ ahicks@luno.com
 
 
 ## Resources
-.link https://www.luno.com/en/developers
+.link https://www.luno.com/developers
 
 - Getting Started
 - API Documentation
@@ -17,9 +17,6 @@ ahicks@luno.com
 
 - Quick Start
 - Code examples
-
-## What is the Luno API?
-
 
 ## What humans see
 `https://www.luno.com/trade/markets/XBTGBP`
@@ -40,7 +37,20 @@ ahicks@luno.com
 
 `{"order_id": "BX933A74BE8"}`
 
-## What can I do?
+## What is an API?
+
+A website is how a **human** uses a service, we:
+- See images on a screen
+- Move a cursor
+- Type on a keyboard
+- Click buttons
+
+An API is how a *computer* uses a service, it:
+- Runs some code to figure out what to do
+- Makes an _API Request_
+- Receives an _API Response_
+
+## What can I do on the Luno API?
 - Get market data
   - e.g. BTC/GBP Best Bid = 7535.41
 - Get wallet balances
@@ -52,8 +62,38 @@ ahicks@luno.com
 - Send and Receive crypto
   - e.g. Send 0.021 BTC to another exchange
 
-## Go Example 1: Getting Balances
+## How do I get started?
+- Install Go
+  - `https://golang.org/doc/install`
+- Get the SDK
+  - `go get github.com/luno/luno-go`
+- Create an API key and secret
+  - `https://www.luno.com/wallet/security/api_keys`
+- Get Coding...
+
+## Examples in Go
+
+## Getting Balances
 .code -edit balances/balances.go /^//START/,/^//END/
 
-## Go Example 2: Placing an Order
+**`go run balances/balances.go`**
+```
+BCH 0.02823515
+XBT 0.09988558
+ETH 0.3871153
+EUR 6.050337
+GBP 7.8712
+LTC 1.87136022
+XRP 114.896144
+```
+
+## Placing an Order
 .code -edit placeorder/place.go /^//START/,/^//END/
+
+## Summary
+
+- Enables programs to trade crypto
+
+- API key authorises your program to access your Luno account
+
+- Check your programs carefully, Orders can **not** be reversed
