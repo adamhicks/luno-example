@@ -91,6 +91,9 @@ XRP 114.896144
 ## Placing an Order
 .code -edit placeorder/place.go /^//START/,/^//END/
 
+## Placing an Order
+.code -edit cancelorder/cancel.go /^//START/,/^//END/
+
 ## Luno API
 
 Enables programs to trade crypto
