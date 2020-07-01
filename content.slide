@@ -1,0 +1,59 @@
+# Trading with the Luno API
+1 Jul 2020
+
+Adam Hicks
+Tech Lead - Luno
+ahicks@luno.com
+
+
+## Resources
+.link https://www.luno.com/en/developers
+
+- Getting Started
+- API Documentation
+- SDKs for Python, Go, PHP
+
+.link https://github.com/adamhicks/luno-example
+
+- Quick Start
+- Code examples
+
+## What is the Luno API?
+
+
+## What humans see
+`https://www.luno.com/trade/markets/XBTGBP`
+
+.image placeorder.png 400 _
+
+## What computers see
+
+**Request**
+
+`HTTP POST`
+
+`https://api.luno.com/api/1/postorder?pair=XBTGBP&type=ASK&volume=0.01&price=7415.31`
+
+**Response**
+
+`200 OK`
+
+`{"order_id": "BX933A74BE8"}`
+
+## What can I do?
+- Get market data
+  - e.g. BTC/GBP Best Bid = 7535.41
+- Get wallet balances
+  - e.g. £32.42 available, £514.84 reserved
+- Place orders
+  - e.g. Sell 0.041 BTC for £9416.52/BTC
+- Access trades
+  - e.g. You sold 0.011 BTC for £98.45
+- Send and Receive crypto
+  - e.g. Send 0.021 BTC to another exchange
+
+## Go Example 1: Getting Balances
+.code -edit balances/balances.go /^//START/,/^//END/
+
+## Go Example 2: Placing an Order
+.code -edit placeorder/place.go /^//START/,/^//END/
