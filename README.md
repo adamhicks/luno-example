@@ -1,6 +1,8 @@
 # luno-example
 Example use of the Luno API using the Go SDK
 
+View the slides at https://talks.godoc.org/github.com/adamhicks/luno-example/content.slide
+
 # Getting Started
 - Clone this repository
 - Install go https://golang.org/doc/install
